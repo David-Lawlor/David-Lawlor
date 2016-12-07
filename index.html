@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>David Lawlor CV</title>
+        <meta name="description" content="Parallax backgrounds with centered content">
+        <link href="css/para.css" rel="stylesheet" />
+        <link href="css/bootstrap.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet" />
+        <link href="css/lightbox.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/carousel.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
+
+        <style>
+            .quote-text{
+                font-family: 'Fontawesome';
+                font-size: 20px;
+                color: white;
+                border-left: 0;
+            }
+
+
+            th {
+                background-color: #5AB1D0;
+                border-collapse: collapse;
+                padding: 5px;
+            }
+
+            .appResultTableHeader{
+                text-align: center;
+            }
+
+            .cv-button {
+                padding-right: 10px;
+            }
+
+            .pulse-button {
+                border: none;
+                box-shadow: 0 0 0 0 rgba(201, 128, 76, 0.7);
+                background-size:cover;
+                background-repeat: no-repeat;
+                cursor: pointer;
+                -webkit-animation: pulse 5s infinite cubic-bezier(0.66, 0, 0, 1);
+                -moz-animation: pulse 5s infinite cubic-bezier(0.66, 0, 0, 1);
+                -ms-animation: pulse 5s infinite cubic-bezier(0.66, 0, 0, 1);
+                animation: pulse 5s infinite cubic-bezier(0.66, 0, 0, 1);
+            }
+            .pulse-button:hover 
+            {
+                -webkit-animation: none;-moz-animation: none;-ms-animation: none;animation: none;
+            }
+
+            @-webkit-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+            @-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+            @-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+            @keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+
+
+            .modal-header {
+                color:#fff;
+                padding:9px 15px;
+                border-bottom:1px solid #eee;
+                background-color: #5AB1D0;
+                -webkit-border-top-left-radius: 5px;
+                -webkit-border-top-right-radius: 5px;
+                -moz-border-radius-topleft: 5px;
+                -moz-border-radius-topright: 5px;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+
+            .bottom-contact-form {
+                color: white;
+                text-align: left;
+            }
+
+            .bottom-contact-form-heading {
+                color: white;
+                text-align: center;
+            }
+
+
+            #popup, #popup2, .bMulti {
+                background-color: #fff;
+                border-radius: 10px 10px 10px 10px;
+                box-shadow: 0 0 25px 5px #999;
+                color: #111;
+                display: none;
+                min-width: 450px;
+                padding: 25px
+            }
+
+            #popup .logo {
+                color: #2b91af;
+                font: bold 325% 'Petrona', sans
+            }
+
+            #popup, .bMulti {
+                min-height: 250px
+            }
+
+            #popup2 iframe {
+                background: red;
+                min-height: 240px;
+                min-width: 450px
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#" id="logo"><img class="img-responsive" style="max-width:140px; margin-top: -7px;" src="img/banner.png" href="#"></a>
+                </div>
+
+
+                <div class="navbar-collapse collapse" id="searchbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <form action="http://www.google.com/search" method="get" class="search-form">
+                                <div class="form-group has-feedback" style="margin: 10px 10px 0 0;">
+                                    <label for="search" class="sr-only">Search</label>
+                                    <input type="btn btn-submit" class="form-control" name="search" id="search" placeholder="search">
+                                    <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="navigation-spacing">
+                            <a href="#">Home
+                                <span class="glyphicon-nav pull-left hidden-xs showopacity glyphicon glyphicon-home"></span>
+                            </a>
+                        </li>
+                        <li class="navigation-spacing">
+                            <a href="#about">About
+                                <span class="glyphicon-nav pull-left hidden-xs showopacity glyphicon glyphicon-user"></span>
+                            </a>
+                        </li>
+
+                        <li class="navigation-spacing">
+                            <a href="#education">Education
+                                <span class="glyphicon-nav pull-left hidden-xs showopacity glyphicon glyphicon-education"></span>
+                            </a>
+                        </li>
+
+                        <li class="navigation-spacing">
+                            <a href="">Experience
+                                <span class="glyphicon-nav pull-left hidden-xs showopacity glyphicon glyphicon-book"></span>
+                            </a>
+                        </li>
+
+                        <li class="navigation-spacing">
+                            <a href="#contactModal" role="button" data-toggle="modal" class="btn">Contact
+                                <span class="glyphicon-nav pull-left hidden-xs showopacity glyphicon glyphicon-envelope"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </div>
+
+
+        <div class="fullscreen background parallax" style="background-image:url('img/banner-full.jpg');" data-img-width="1600" data-img-height="1064" data-diff="100">
+            <div class="content-a">
+                <div class="content-b">
+                    <img class="img-responsive center-block img-circle" src="/img/bm.jpg"> 
+                    <div class="text-center jumbotron-custom center-block">
+                        <h3>David Lawlor</h3>
+                        <h4>Software Developer</h4> 
+                        <a class="btn btn-primary btn-lg pulse-button" href="/img/banner-1.jpg">
+                            <i class="fa fa-paperclip cv-button" aria-hidden="true"></i>Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- -->
+        <section class="infodiv">
+            <div class="content-a">
+                <div class="content-b">
+                    <div class="container">
+                        <div class="infopanel" id="about">
+                            <h2>ABOUT</h2>
+                            <hr />
+                            <p>Currently in my 4th year of study in Computer Science at IT Tallaght which I will be due to complete in May 2017. 
+                            </p>
+                            <br />
+                            <p>
+                                I am fully qualified in Electronic Security Systems. A trade which I completed with merit in Jan 2013. Due to the downturn in the economy
+                                I returned to college. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="not-fullscreen background parallax" style="background-image:url('/img/coding.jpg');" data-img-width="1600" data-img-height="1064" data-diff="100">
+            <div class="content-a">
+                <div class="content-b">
+                    <div class="container-fluid">
+                        <div class='col-md-offset-2 col-md-8'>
+                            <div class="carousel slide" data-ride="carousel" id="quote-carousel">        
+                                <div class="carousel-inner">
+                                    <!-- Quote 1 -->
+                                    <div class="item active">
+                                        <blockquote class="quote-text">
+                                            <div class="col-sm-12 text-center'">
+                                                <p class="quote-text">It has become appallingly obvious that our technology has exceeded our humanity.</p>
+                                                <small class="quote-text">Albert Einstein</small>
+                                            </div>
+                                        </blockquote>
+                                    </div>
+                                    <!-- Quote 2 -->
+                                    <div class="item">
+                                        <blockquote class="quote-text">
+                                            <div class="col-sm-12 text-center'">
+                                                <p class="quote-text">One machine can do the work of fifty ordinary men.  No machine can do the work of one extraordinary man. </p>
+                                                <small class="quote-text">Elbert Hubbard </small>
+                                            </div>
+                                        </blockquote>
+                                    </div>
+                                    <!-- Quote 3 -->
+                                    <div class="item" >
+                                        <blockquote class="quote-text">
+                                            <div class="col-sm-12 text-center" >
+                                                <p class="quote-text">The great myth of our times is that technology is communication.</p>
+                                                <small class="quote-text">Libby Larsen</small>
+                                            </div>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="infodiv">
+            <h2>Education</h2>
+            <div ng-app="collegeSubjects" ng-controller="subjectCtrl">
+                <div class="container">
+                    <div id="parentHorizontalTab">
+                        <ul class="resp-tabs-list hor_1">
+                            <li>IT Tallaght Computing</li>
+                            <li>IT Tallaght Preparitory Studies</li>
+                            <li>Electronic Security Systems</li>
+                        </ul>
+                        <div class="resp-tabs-container hor_1">
+                            <div>
+                                <h4>Duration: September 2013 - Present</h4>
+                                <div id="ChildVerticalTab_1">
+                                    <ul class="resp-tabs-list ver_1">
+                                        <li><img src="img/IT-Tallaght-Logo.gif" /><h4>Year 4</h4></li>
+                                        <li><img src="img/IT-Tallaght-Logo.gif" /><h4>Year 3</h4></li>
+                                        <li><img src="img/IT-Tallaght-Logo.gif" /><h4>Year 2</h4></li>
+                                        <li><img src="img/IT-Tallaght-Logo.gif" /><h4>Year 1</h4></li>
+                                    </ul>
+                                    <div class="resp-tabs-container ver_1">
+                                        <div>
+                                            <table class="table table-hover" align="center">
+                                                <thead>
+                                                    <tr align="left">
+                                                        <th>SUBJECT</th>
+                                                        <th>GRADE</th>
+                                                        <th>PERCENTAGE</th>
+                                                    </tr>
+                                                </thead>
+
+                                                <tbody ng:repeat="s in subjectList.col_year4">
+                                                    <h5><u><strong>Year 4 GPA: X.XX</strong></u></h5>
+                                                    <br/>
+                                                    <tr>
+                                                        <td align="left">{{s.subject}}</td>
+                                                        <td>{{s.grade}}</td>
+                                                        <td>{{s.percentage}}</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div>
+                                            <table class="table table-hover" align="center">
+                                                <tr>
+                                                    <th>SUBJECT</th>
+                                                    <th>GRADE</th>
+                                                    <th>PERCENTAGE</th>
+                                                </tr>
+                                                <tbody ng:repeat="s in subjectList.col_year3">
+                                                    <h5><u><strong>Year 3 GPA: X.XX</strong></u></h5>
+                                                    <br/>
+                                                    <tr>
+                                                        <td align="left">{{s.subject}}</td>
+                                                        <td>{{s.grade}}</td>
+                                                        <td>{{s.percentage}}</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div>
+                                            <table class="table table-hover" align="center">
+                                                <tr>
+                                                    <th>SUBJECT</th>
+                                                    <th>GRADE</th>
+                                                    <th>PERCENTAGE</th>
+                                                </tr>
+                                                <tbody ng:repeat="s in subjectList.col_year2">
+                                                    <h5><u><strong>Year 2 GPA: X.XX</strong></u></h5>
+                                                    <br/>
+                                                    <tr>
+                                                        <td align="left">{{s.subject}}</td>
+                                                        <td>{{s.grade}}</td>
+                                                        <td>{{s.percentage}}</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div>
+                                            <table class="table table-hover" align="center">
+                                                <tr>
+                                                    <th>SUBJECT</th>
+                                                    <th>GRADE</th>
+                                                    <th>PERCENTAGE</th>
+                                                </tr>
+                                                <tbody ng:repeat="s in subjectList.col_year1">
+                                                    <h5><u><strong>Year 1 GPA: X.XX</strong></u></h5>
+                                                    <br/>
+                                                    <tr>
+                                                        <td align="left">{{s.subject}}</td>
+                                                        <td>{{s.grade}}</td>
+                                                        <td>{{s.percentage}}</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p style="clear: both"></p>
+                            </div>
+
+                            <div>
+                                <h4>Duration: March 2013 - July 2013</h4>
+                                <div id="ChildVerticalTab_2">
+                                    <ul class="resp-tabs-list ver_1">
+                                        <li><img src="img/IT-Tallaght-Logo.gif" />
+                                            <h4>Year 1</h4>
+                                        </li>
+                                    </ul>
+
+                                    <div class="resp-tabs-container ver_1">
+                                        <div>
+                                            <table class="table table-hover" align="center">
+                                                <tr>
+                                                    <th>SUBJECT</th>
+                                                    <th class="appResultTableHeader">RESULT</th>
+                                                </tr>
+                                                <tbody ng:repeat="s in subjectList.prep_year1">
+                                                    <h5><u><strong>Year 3</strong></u></h5>
+                                                    <br/>
+                                                    <tr>
+                                                        <td align="left">{{s.subject}}</td>
+                                                        <td>{{s.result}}</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p style="clear: both"></p>
+                            </div>
+
+                            <div>
+                                <h4>Duration: May 2007 - January 2013</h4>
+                                <div id="ChildVerticalTab_3">
+                                    <ul class="resp-tabs-list ver_1">
+                                        <li><img src="img/wit_logo.png" /><h4>Year 3</h4></li>
+                                        <li><img src="img/wit_logo.png" /><h4>Year 2</h4></li>
+                                        <li><img src="img/fas_logo.png" /><h4>Year 1</h4></li>
+                                    </ul>
+                                    <div class="resp-tabs-container ver_1">
+                                        <div>
+                                            <table class="table table-hover" align="center">
+                                                <tr>
+                                                    <th>SUBJECT</th>
+                                                    <th class="appResultTableHeader">RESULT</th>
+                                                </tr>
+                                                <tbody ng:repeat="s in subjectList.app_year3">
+                                                    <h5><u><strong>Year 3</strong></u></h5>
+                                                    <br/>
+                                                    <tr>
+                                                        <td align="left">{{s.subject}}</td>
+                                                        <td>{{s.result}}</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div>
+                                            <table class="table table-hover" align="center">
+                                                <tr>
+                                                    <th>SUBJECT</th>
+                                                    <th class="appResultTableHeader" >RESULT</th>
+                                                </tr>
+                                                <tbody ng:repeat="s in subjectList.app_year2">
+                                                    <h5><u><strong>Year 2</strong></u></h5>
+                                                    <br/>
+                                                    <tr>
+                                                        <td align="left">{{s.subject}}</td>
+                                                        <td>{{s.result}}</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div>
+                                            <table class="table table-hover" align="center">
+                                                <tr>
+                                                    <th>SUBJECT</th>
+                                                    <th class="appResultTableHeader">RESULT</th>
+                                                </tr>
+                                                <tbody ng:repeat="s in subjectList.app_year1">
+                                                    <h5><u><strong>Year 1</strong></u></h5>
+                                                    <br/>
+                                                    <tr>
+                                                        <td align="left">{{s.subject}}</td>
+                                                        <td>{{s.result}}</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p style="clear: both"></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="not-fullscreen background parallax" style="background-image:url('img/coffee-laptop-sm.jpg');" data-img-width="1600" data-img-height="1064" data-diff="100">
+            <div class="content-a">
+                <div class="content-b">
+                </div>
+            </div>
+        </div>
+
+        <section class="infodiv">
+            <h2>Experience</h2>
+            <div class="content-a">
+                <div class="content-b">
+                    <div class="container"> 
+
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 hover-pic-div">
+                            <div class="hovereffect">
+                                <img src="/img/openjaw_logo.jpg" alt="">
+                                <div class="overlay">
+                                    <h2>OpenJaw Technologies</h2>
+                                    <a href="#openjaw-modal" data-toggle="modal" class="info">See More</a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12">
+                                <h3>Intern Software Developer</h3>
+                                <h6>January 2016 - September 2016</h6>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 hover-pic-div">
+                            <div class="hovereffect ">
+                                <img src="/img/wriggle_logo.jpg" alt="">
+                                <div class="overlay">
+                                    <h2>Wriggle</h2>
+                                    <a href="#wriggle-modal" data-toggle="modal" class="info">See More</a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12">
+                                <h3>E-Learning Device Configuration</h3>
+                                <h6>May 2015 - September 2016</h6>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 hover-pic-div">
+                            <div class="hovereffect">
+                                <img  src="/img/tripwire_logo.png" alt="">
+                                <div class="overlay">
+                                    <h2>Tripwire</h2>
+                                    <a href="#tripwire-modal" data-toggle="modal" class="info">See More</a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12">
+                                <h3>Electronic Security Systems Apprentice</h3>
+                                <h6>April 2011 – January 2013</h6>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 hover-pic-div">
+                            <div class="hovereffect">
+                                <img src="/img/sls_logo.png" alt="">
+                                <div class="overlay">
+                                    <h2>SLS Group</h2>
+                                    <a href="#sls-modal" data-toggle="modal" class="info">See More</a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12">
+                                <h3>Electronic Security Systems Apprentice</h3>
+                                <h6>May 2007 – August 2010</h6>
+                            </div>
+                        </div>
+
+                    </div>      
+                </div>
+            </div>
+        </section>
+
+        <div class="not-fullscreen background parallax" style="background-image:url('img/coffee-laptop-sm.jpg');" data-img-width="1600" data-img-height="1064" data-diff="100">
+            <div class="content-a">
+                <div class="content-b">
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- -->
+        <section class="infodiv">
+            <div class="content-a">
+                <div class="content-b">
+                    <div class="container hero">
+                        <!-- Carousel -->
+                        <div id="hero-carousel" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators row">
+                                <li data-target="#hero-carousel" data-slide-to="0" class="col-sm-4 message active">
+                                    <div class="caption">CAPTION 1</div>
+                                </li>
+                                <li data-target="#hero-carousel" data-slide-to="1" class="col-sm-4 message">
+                                    <div class="caption">CAPTION 2</div>
+                                </li>
+                                <li data-target="#hero-carousel" data-slide-to="2" class="col-sm-4 message">
+                                    <div class="caption">CAPTION 3</div>
+                                </li>
+                            </ol>
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="carousel-card" style=""></div>
+                                    <div class="carousel-caption">
+                                        <h1 class="message-1">Title 1</h1>
+                                        <p><a href="" class="btn btn-lg message">Link to title 1</a></p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="carousel-card" style="">
+                                    </div>
+                                    <div class="carousel-caption">
+                                        <h1 class="message-2">Title 2!</h1>
+                                        <p><a href="" class="btn btn-lg message">Link to title 2</a></p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="carousel-card" style="">
+                                    </div>
+                                    <div class="carousel-caption">
+                                        <h1 class="message-3">Title 3?</h1>
+                                        <p><a href="" class="btn btn-lg message">Link to title 1</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#hero-carousel" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#hero-carousel" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- -->
+        <section class="footer">
+            <div class="content-a">
+                <div class="content-b">
+                    <footer class="footer" style="height: 100%; margin: 20px">
+                        <div class="row">
+
+                            <div class="col-xs-12 col-md-4 col-md-push-4 text-center" style="margin-bottom:80px;">
+                                <div class="wrapper col-xs-12">
+                                    <ul class="social-icons icon-circle icon-rotate list-unstyled list-inline">
+                                        <li> <a href="mailto:lawlor041988@gmail.com" target="_blank"><span class="fa fa-envelope"></span></a> </li>
+                                        <li> <a href="https://github.com/David-Lawlor" target="_blank"><i class="fa fa-github"></i></a> </li>
+                                        <li> <a href="https://www.facebook.com/"  target="_blank"><i class="fa fa-facebook"></i></a> </li>
+                                        <li> <a href="https://ie.linkedin.com/in/davidlawlor1" target="_blank"><i class="fa fa-linkedin"></i></a> </li>
+                                        <li> <a href="http://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow"></i></a> </li>
+                                        <li> <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                    </ul>
+                                </div>
+                                <form class="form-horizontal" style="max-height: 400px" role="form">
+                                    <h3 class="bottom-contact-form-heading">Contact Me</h3>
+                                    <fieldset>
+                                        <!-- Text input-->
+                                        <div class="form-group">
+                                            <label class="col-sm-1 control-label bottom-contact-form">Name</label>
+                                            <div class="col-sm-12">
+                                                <input type="text" class="form-control" name="first_name" id="first_name"  required>
+                                            </div>
+                                        </div>
+
+                                        <!-- Text input-->
+                                        <div class="form-group">
+                                            <label class="col-sm-1 control-label bottom-contact-form" >Email</label>
+                                            <div class="col-sm-12">
+                                                <input type="email" class="form-control" id="email" name="email"  required  >
+                                            </div>
+                                        </div>
+
+                                        <!-- Text input-->
+                                        <div class="form-group">
+                                            <label class="col-sm-1 control-label bottom-contact-form" >Message</label>
+                                            <div class="col-sm-12">
+                                                <textarea name="comments" id="comments" class="form-control" rows="5" required></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="col-sm-offset-2 col-sm-10">
+                                                <div class="pull-right">
+                                                    <button type="submit" class="btn btn-primary" style="position: relative; top: -50px" >Send<i class="fa fa-paper-plane" aria-hidden="true" style="padding-left: 5px;"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <div class="col-xs-12 col-md-4 col-md-pull-4">
+                                <div style="width: 100%; border-radius: 5%;"><iframe style="border-radius:5px;" width="100%" height="430" src="http://www.mapi.ie/create-google-map/map.php?width=100%&amp;height=600&amp;;hl=en&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=A&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="http://www.mapsdirections.info/pl/stworz-mape-google/"></a><a href="http://www.mapsdirections.info/pl/"></a></iframe></div><br />
+                            </div> 
+                            <div class="col-xs-12 col-md-4" >
+                                <!-- start feedwind code --> <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="?widget_parameter=%7B%22sources%22%3A%5B%7B%22source%22%3A%22http%3A%2F%2Fwww.techmeme.com%2Ffeed.xml%22%2C%22type%22%3A%22RSS%22%7D%5D%2C%22name%22%3A%22%22%2C%22width%22%3A0%2C%22height%22%3A%22480%22%2C%22height_by_article%22%3A0%2C%22target%22%3A%22_blank%22%2C%22font%22%3A%22Arial%2C%20Helvetica%2C%20sans-serif%22%2C%22title_font_size%22%3A%2216%22%2C%22item_title_font_size%22%3A%2216%22%2C%22item_description_font_size%22%3A%2212%22%2C%22border%22%3A%22on%22%2C%22css_url%22%3A%22%22%2C%22responsive%22%3A%22on%22%2C%22text_direction%22%3A%22left%22%2C%22text_alignment%22%3A%22left%22%2C%22corner%22%3A%22rounded%22%2C%22scroll%22%3A%22on%22%2C%22auto_scroll%22%3A%22on%22%2C%22auto_scroll_direction%22%3A%22up%22%2C%22auto_scroll_step_speed%22%3A%2210%22%2C%22auto_scroll_mc_speed%22%3A%2220%22%2C%22sort%22%3A%22new%22%2C%22title%22%3A%22on%22%2C%22title_sentence%22%3A%22%22%2C%22title_link%22%3A%22%22%2C%22title_bgcolor%22%3A%22%236AB9D4%22%2C%22title_color%22%3A%22%23505659%22%2C%22title_bgimage%22%3A%22%22%2C%22item_bgcolor%22%3A%22%23ffffff%22%2C%22item_bgimage%22%3A%22%22%2C%22item_title_length%22%3A%2255%22%2C%22item_title_color%22%3A%22%232e7ec8%22%2C%22item_border_bottom%22%3A%22on%22%2C%22item_description%22%3A%22both%22%2C%22item_link%22%3A%22off%22%2C%22item_description_length%22%3A%22100%22%2C%22item_description_color%22%3A%22%23505659%22%2C%22item_date%22%3A%22on%22%2C%22item_date_format%22%3A%22%25b%20%25e%2C%20%25Y%20%25k%3A%25M%22%2C%22item_date_timezone%22%3A%22%22%2C%22item_description_style%22%3A%22thumbnail%22%2C%22item_thumbnail%22%3A%22crop%22%2C%22item_thumbnail_selection%22%3A%22auto%22%2C%22article_num%22%3A%2215%22%2C%22item_player%22%3A%22youtube%22%2C%22keyword_inc%22%3A%22%22%2C%22keyword_exc%22%3A%22%22%7D"></script> <!-- end feedwind code -->
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal -->
+        <div id="contactModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true" >
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content" >
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title">Contact</h4>
+                    </div>
+                    <div class="modal-body" style="margin: 10px;">
+                        <div class="row">
+                            <form class="form-horizontal" role="form">
+                                <fieldset>
+                                    <!-- Text input-->
+                                    <div class="form-group">
+                                        <label class="col-xs-2 control-label">Name</label>
+                                        <div class="col-xs-12 col-sm-9">
+                                            <input type="text" class="form-control" name="first_name" id="first_name"  style="">
+                                        </div>
+                                    </div>
+
+                                    <!-- Text input-->
+                                    <div class="form-group">
+                                        <label class="col-xs-2 control-label" >Email</label>
+                                        <div class="col-xs-12 col-sm-9">
+                                            <input type="email" class="form-control" id="email" name="email">
+                                        </div>
+                                    </div>
+
+                                    <!-- Text input-->
+                                    <div class="form-group">
+                                        <label class="col-xs-2 control-label" >Message</label>
+                                        <div class="col-xs-12 col-sm-9" >
+                                            <textarea name="comments" id="comments" class="form-control" rows="5" style="padding: 10px;"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-xs-offset-2 col-xs-10 col-sm-9">
+                                            <div class="pull-right">
+                                                <button type="submit" class="btn" data-dismiss="modal">Cancel<i class="fa fa-times" aria-hidden="true" style="padding-left: 5px;"></i></button>
+                                                <button id="send-message" data-dismiss="modal" type="submit" class="btn btn-primary" data-bpopup="{&quot;autoClose&quot;:1000}" >Send<i class="fa fa-paper-plane" aria-hidden="true" style="padding-left: 5px;"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </fieldset>
+                            </form>
+                        </div><!-- /.row -->
+                    </div><!-- End of Modal body -->
+                    <div class="modal-footer">
+                        <div class="col-xs-12 align-center">
+                            <address class="modal_contact_details">
+                                <span><i class="fa fa-phone" aria-hidden="true" style="margin-right: 8px;"></i>Phone: 085 1234567</span>
+                                <br />
+                                <span><i class="fa fa-envelope" aria-hidden="true" style="margin-right: 8px;"></i>E-mail: David.Lawlor@example.com</span>
+                            </address>
+                        </div>
+
+
+                        <div class="col-sm-12 text-center">
+                            <div class="wrapper">
+                                <ul class="social-icons icon-circle icon-rotate list-unstyled list-inline">
+                                    <li> <a href="mailto:lawlor041988@gmail.com" target="_blank"><span class="fa fa-envelope"></span></a> </li>
+                                    <li> <a href="https://github.com/David-Lawlor" target="_blank"><i class="fa fa-github img-responsive"></i></a> </li>
+                                    <li> <a href="https://www.facebook.com/"  target="_blank"><i class="fa fa-facebook"></i></a> </li>
+                                    <li> <a href="https://ie.linkedin.com/in/davidlawlor1" target="_blank"><i class="fa fa-linkedin"></i></a> </li>
+                                    <li> <a href="http://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow"></i></a> </li>
+                                    <li> <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End of Modal content -->
+            </div><!-- End of Modal dialog -->
+        </div><!-- End of Modal -->
+
+        <!-- Project -->
+        <div class="project-modal modal fade container" id="openjaw-modal" tabindex="-1" role="dialog" >
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="fa-stack fa-lg close-button pull-right" data-dismiss="modal">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-times fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h2>Openjaw</h2>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project -->
+        <div class="project-modal modal fade container" id="wriggle-modal" tabindex="-1" role="dialog" >
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="fa-stack fa-lg close-button pull-right" data-dismiss="modal">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-times fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h2>Wriggle</h2>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project -->
+        <div class="project-modal modal fade container" id="tripwire-modal" tabindex="-1" role="dialog" >
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="fa-stack fa-lg pull-right" style="background-color: white; border-radius: 100%" data-dismiss="modal">
+                        <i class="fa fa-times fa-stack-1x" style="color: black"></i>
+                    </a>
+                    <h2>Tripwire</h2>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project -->
+        <div class="project-modal modal fade container" id="sls-modal" tabindex="-1" role="dialog" >
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="fa-stack fa-lg close-button pull-right" data-dismiss="modal">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-times fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h2>SLS Group</h2>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div id="popup">
+            <span class="button b-close"><span>X</span></span>
+            If you can't get it up use<br><span class="logo">bPopup</span>
+        </div>
+
+
+
+
+
+
+
+
+        <!-- include jQuery -->
+        <script src="js/jquery-1.10.2.min.js"></script>
+        <script src="js/easyResponsiveTabs.js"></script>
+        <script src="/js/jquery.elevatezoom.js" type="text/javascript"></script>
+        <script src="js/angular.min.js"></script>
+        <script src="js/college-subjects.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/para.js" type="text/javascript"></script>
+        <script src="js/lightbox.js"></script>
+        <script src="js/jquery.bpopup.min.js"></script>
+        <script type="text/javascript">
+            // When the DOM is ready, run this function
+            $(document).ready(function() {
+                //Set the carousel options
+                $('#quote-carousel').carousel({
+                    pauseOnHover: true,
+                    interval: 10000,
+                });
+            });
+
+            $("#zoom_05").elevateZoom();
+            $("#zoom_02").elevateZoom();
+
+        </script>
+
+        <script>
+            $(document).ready(function() {
+                $( "#send-message" ).click(function() {
+                    $('#popup').bPopup({
+                        autoClose: 1000 //Auto closes after 1000ms/1sec
+                    });
+                });
+            });
+
+
+        </script>
+
+        <script>
+            var isMobile = {
+                Android: function() {
+                    return navigator.userAgent.match(/Android/i);
+                },
+                BlackBerry: function() {
+                    return navigator.userAgent.match(/BlackBerry/i);
+                },
+                iOS: function() {
+                    return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+                },
+                Opera: function() {
+                    return navigator.userAgent.match(/Opera Mini/i);
+                },
+                Windows: function() {
+                    return navigator.userAgent.match(/IEMobile/i);
+                },
+                any: function() {
+                    return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+                }
+            };
+
+            $('#hero-carousel').carousel ({
+                interval: isMobile.any() ? false : 5000
+            });
+
+        </script>
+
+
+
+        <!--        <script>
+$(document).ready(function(ev){
+$('#custom_carousel').on('slide.bs.carousel', function (evt) {
+$('#custom_carousel .controls li.active').removeClass('active');
+$('#custom_carousel .controls li:eq('+$(evt.relatedTarget).index()+')').addClass('active');
+})
+});
+</script>-->
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                //Horizontal Tab
+                $('#parentHorizontalTab').easyResponsiveTabs({
+                    type: 'default', //Types: default, vertical, accordion
+                    width: 'auto', //auto or any width like 600px
+                    fit: true, // 100% fit in a container
+                    tabidentify: 'hor_1', // The tab groups identifier
+                    activate: function(event) { // Callback function if tab is switched
+                        var $tab = $(this);
+                        var $info = $('#nested-tabInfo');
+                        var $name = $('span', $info);
+                        $name.text($tab.text());
+                        $info.show();
+                    }
+                });
+
+                // Child Tab
+                $('#ChildVerticalTab_1').easyResponsiveTabs({
+                    type: 'vertical',
+                    width: 'auto',
+                    fit: true,
+                    tabidentify: 'ver_1', // The tab groups identifier
+                    activetab_bg: '#fff', // background color for active tabs in this group
+                    inactive_bg: '#F5F5F5', // background color for inactive tabs in this group
+                    active_border_color: '#c1c1c1', // border color for active tabs heads in this group
+                    active_content_border_color: '#5AB1D0' // border color for active tabs contect in this group so that it matches the tab head border
+                });
+
+
+                // Child Tab
+                $('#ChildVerticalTab_2').easyResponsiveTabs({
+                    type: 'vertical',
+                    width: 'auto',
+                    fit: true,
+                    tabidentify: 'ver_1', // The tab groups identifier
+                    activetab_bg: '#fff', // background color for active tabs in this group
+                    inactive_bg: '#F5F5F5', // background color for inactive tabs in this group
+                    active_border_color: '#c1c1c1', // border color for active tabs heads in this group
+                    active_content_border_color: '#5AB1D0' // border color for active tabs contect in this group so that it matches the tab head border
+                });
+
+
+                // Child Tab
+                $('#ChildVerticalTab_3').easyResponsiveTabs({
+                    type: 'vertical',
+                    width: 'auto',
+                    fit: true,
+                    tabidentify: 'ver_1', // The tab groups identifier
+                    activetab_bg: '#fff', // background color for active tabs in this group
+                    inactive_bg: '#F5F5F5', // background color for inactive tabs in this group
+                    active_border_color: '#c1c1c1', // border color for active tabs heads in this group
+                    active_content_border_color: '#5AB1D0' // border color for active tabs contect in this group so that it matches the tab head border
+                });
+
+
+                //Vertical Tab
+                $('#parentVerticalTab').easyResponsiveTabs({
+                    type: 'vertical', //Types: default, vertical, accordion
+                    width: 'auto', //auto or any width like 600px
+                    fit: true, // 100% fit in a container
+                    closed: 'accordion', // Start closed if in accordion view
+                    tabidentify: 'hor_1', // The tab groups identifier
+                    activate: function(event) { // Callback function if tab is switched
+                        var $tab = $(this);
+                        var $info = $('#nested-tabInfo2');
+                        var $name = $('span', $info);
+                        $name.text($tab.text());
+                        $info.show();
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
