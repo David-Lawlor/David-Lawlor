@@ -14,100 +14,6 @@
         <link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css"/>
         <link rel="stylesheet" type="text/css" href="css/jquery.circliful.css" />
 
-        <style>
-            .quote-text{
-                font-family: 'Fontawesome';
-                font-size: 20px;
-                color: white;
-                border-left: 0;
-            }
-
-
-            th {
-                background-color: #5AB1D0;
-                border-collapse: collapse;
-                padding: 5px;
-            }
-
-            .appResultTableHeader{
-                text-align: center;
-            }
-
-            .cv-button {
-                padding-right: 10px;
-            }
-
-            .pulse-button {
-                border: none;
-                box-shadow: 0 0 0 0 rgba(201, 128, 76, 0.7);
-                background-size:cover;
-                background-repeat: no-repeat;
-                cursor: pointer;
-                -webkit-animation: pulse 5s infinite cubic-bezier(0.66, 0, 0, 1);
-                -moz-animation: pulse 5s infinite cubic-bezier(0.66, 0, 0, 1);
-                -ms-animation: pulse 5s infinite cubic-bezier(0.66, 0, 0, 1);
-                animation: pulse 5s infinite cubic-bezier(0.66, 0, 0, 1);
-            }
-            .pulse-button:hover 
-            {
-                -webkit-animation: none;-moz-animation: none;-ms-animation: none;animation: none;
-            }
-
-            @-webkit-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
-            @-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
-            @-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
-            @keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
-
-
-            .modal-header {
-                color:#fff;
-                padding:9px 15px;
-                border-bottom:1px solid #eee;
-                background-color: #5AB1D0;
-                -webkit-border-top-left-radius: 5px;
-                -webkit-border-top-right-radius: 5px;
-                -moz-border-radius-topleft: 5px;
-                -moz-border-radius-topright: 5px;
-                border-top-left-radius: 5px;
-                border-top-right-radius: 5px;
-            }
-
-            .bottom-contact-form {
-                color: white;
-                text-align: left;
-            }
-
-            .bottom-contact-form-heading {
-                color: white;
-                text-align: center;
-            }
-
-
-            #popup, #popup2, .bMulti {
-                background-color: #fff;
-                border-radius: 10px 10px 10px 10px;
-                box-shadow: 0 0 25px 5px #999;
-                color: #111;
-                display: none;
-                min-width: 450px;
-                padding: 25px
-            }
-
-            #popup .logo {
-                color: #2b91af;
-                font: bold 325% 'Petrona', sans
-            }
-
-            #popup, .bMulti {
-                min-height: 250px
-            }
-
-            #popup2 iframe {
-                background: red;
-                min-height: 240px;
-                min-width: 450px
-            }
-        </style>
     </head>
     <body>
         <div class="navbar navbar-inverse navbar-fixed-top">
@@ -187,11 +93,11 @@
         </div>
 
         <!-- -->
-        <section class="infodiv">
+        <section class="infodiv" id="about">
             <div class="content-a">
                 <div class="content-b">
                     <div class="container">
-                        <div class="infopanel" id="about">
+                        <div class="infopanel">
                             <h2>ABOUT</h2>
                             <hr />
                             <p>Currently in my 4th year of study in Computer Science at IT Tallaght which I will be due to complete in May 2017. 
@@ -246,39 +152,6 @@
                             </div>                          
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-
-
-        <section class="infodiv">
-            <div class="content-a">
-                <div class="content-b">
-                    <div class="container">
-                        <div class="infopanel" id="skills">
-                            <h2>Skills</h2>
-                            <div class="row">
-                                <div class="col-xs-6 col-sm-6 col-md-3"><div id="test-circle1"></div></div>
-                                <div class="col-xs-6 col-sm-6 col-md-3"><div id="test-circle2"></div></div>
-                                <div class="col-xs-6 col-sm-6 col-md-3"><div id="test-circle3"></div></div>
-                                <div class="col-xs-6 col-sm-6 col-md-3"><div id="test-circle4"></div></div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-6 col-sm-6 col-md-3"><div id="test-circle5"></div></div>
-                                <div class="col-xs-6 col-sm-6 col-md-3"><div id="test-circle6"></div></div>
-                                <div class="col-xs-6 col-sm-6 col-md-3"><div id="test-circle7"></div></div>
-                                <div class="col-xs-6 col-sm-6 col-md-3"><div id="test-circle8"></div></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <div class="not-fullscreen background parallax" style="background-image:url('img/coffee-laptop-sm.jpg');" data-img-width="1600" data-img-height="1064" data-diff="100">
-            <div class="content-a">
-                <div class="content-b">
                 </div>
             </div>
         </div>
@@ -482,6 +355,39 @@
                 </div>
             </div>
         </section>
+
+        <div class="not-fullscreen background parallax" style="background-image:url('img/coffee-laptop-sm.jpg');" data-img-width="1600" data-img-height="1064" data-diff="100">
+            <div class="content-a">
+                <div class="content-b">
+                </div>
+            </div>
+        </div>
+
+
+        <section class="infodiv">
+            <div class="content-a">
+                <div class="content-b">
+                    <div class="container">
+                        <div class="infopanel" id="skills">
+                            <h2>Skills</h2>
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-3 col-md-3"><div id="test-circle1"></div></div>
+                                <div class="col-xs-6 col-sm-3 col-md-3"><div id="test-circle2"></div></div>
+                                <div class="col-xs-6 col-sm-3 col-md-3"><div id="test-circle3"></div></div>
+                                <div class="col-xs-6 col-sm-3 col-md-3"><div id="test-circle4"></div></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-3 col-md-3"><div id="test-circle5"></div></div>
+                                <div class="col-xs-6 col-sm-3 col-md-3"><div id="test-circle6"></div></div>
+                                <div class="col-xs-6 col-sm-3 col-md-3"><div id="test-circle7"></div></div>
+                                <div class="col-xs-6 col-sm-3 col-md-3"><div id="test-circle8"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <div class="not-fullscreen background parallax" style="background-image:url('img/coffee-laptop-sm.jpg');" data-img-width="1600" data-img-height="1064" data-diff="100">
             <div class="content-a">
@@ -851,36 +757,10 @@
         </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <div id="popup">
-            <span class="button b-close"><span>X</span></span>
-            If you can't get it up use<br><span class="logo">bPopup</span>
+            <h2>Thank you!</h2>
+            <p>Your message has been successfully sent. We will contact you very soon!</p>
         </div>
-
-
-
-
-
-
-
 
         <!-- include jQuery -->
         <script src="js/jquery-1.10.2.min.js"></script>
@@ -894,6 +774,9 @@
         <script src="js/jquery.bpopup.min.js"></script>
         <script src="js/jquery.waypoints.js"></script>
         <script src="js/jquery.circliful.js"></script>
+        <script src="js/circliful-rings.js"></script>
+        <script src="js/carousel-disable-mobile.js"></script>
+        <script src="js/responsive-tabs-custom.js"></script>
         <script type="text/javascript">
             // When the DOM is ready, run this function
             $(document).ready(function() {
@@ -902,267 +785,31 @@
                     pauseOnHover: true,
                     interval: 10000,
                 });
-            });
+
+                $( "#send-message" ).click(function() {
+                    $('#popup').bPopup({
+                        autoClose: 3000 //Auto closes after 1000ms/1sec
+                    });
+                });
+
+                // populate the skill rings
+                myFunction()
+
+
+                // animate the skill rings when scroll to them
+                var waypoint = new Waypoint({
+                    element: document.getElementById('skills'),
+                    handler: function(direction) {
+                        myFunction()
+                    },
+                    offset: '25%'
+                })
+                
+                });
 
             $("#zoom_05").elevateZoom();
             $("#zoom_02").elevateZoom();
 
-        </script>
-
-        <script>
-            $(document).ready(function() {
-                $( "#send-message" ).click(function() {
-                    $('#popup').bPopup({
-                        autoClose: 1000 //Auto closes after 1000ms/1sec
-                    });
-                });
-            });
-
-
-        </script>
-
-        <script>
-            function myFunction() {
-                $("#test-circle1").html("");
-                $("#test-circle1").circliful({
-                    animation: 1,
-                    animationStep: 5,
-                    foregroundBorderWidth: 15,
-                    backgroundBorderWidth: 15,
-                    percent: 38,
-                    textSize: 28,
-                    textStyle: 'font-size: 12px;',
-                    textColor: '#666',
-                    multiPercentage: 1,
-                    percentages: [10, 20, 30],
-                    text: "Java", 
-                    textBelow: true
-                });
-
-                $("#test-circle2").html("");
-                $("#test-circle2").circliful({
-                    animation: 1,
-                    animationStep: 5,
-                    foregroundBorderWidth: 15,
-                    backgroundBorderWidth: 15,
-                    percent: 38,
-                    textSize: 28,
-                    textStyle: 'font-size: 12px;',
-                    textColor: '#666',
-                    multiPercentage: 1,
-                    percentages: [10, 20, 30],
-                    text: "C#", 
-                    textBelow: true
-                }); 
-
-                $("#test-circle3").html("");
-                $("#test-circle3").circliful({
-                    animation: 1,
-                    animationStep: 5,
-                    foregroundBorderWidth: 15,
-                    backgroundBorderWidth: 15,
-                    percent: 38,
-                    textSize: 28,
-                    textStyle: 'font-size: 12px;',
-                    textColor: '#666',
-                    multiPercentage: 1,
-                    percentages: [10, 20, 30],
-                    text: "Java", 
-                    textBelow: true
-                }); 
-
-                $("#test-circle4").html("");
-                $("#test-circle4").circliful({
-                    animation: 1,
-                    animationStep: 5,
-                    foregroundBorderWidth: 15,
-                    backgroundBorderWidth: 15,
-                    percent: 38,
-                    textSize: 28,
-                    textStyle: 'font-size: 12px;',
-                    textColor: '#666',
-                    multiPercentage: 1,
-                    percentages: [10, 20, 30],
-                    text: "Java", 
-                    textBelow: true
-                }); 
-
-                $("#test-circle5").html("");
-                $("#test-circle5").circliful({
-                    animation: 1,
-                    animationStep: 5,
-                    foregroundBorderWidth: 15,
-                    backgroundBorderWidth: 15,
-                    percent: 38,
-                    textSize: 28,
-                    textStyle: 'font-size: 12px;',
-                    textColor: '#666',
-                    multiPercentage: 1,
-                    percentages: [10, 20, 30],
-                    text: "Java", 
-                    textBelow: true
-                }); 
-
-                $("#test-circle6").html("");
-                $("#test-circle6").circliful({
-                    animation: 1,
-                    animationStep: 5,
-                    foregroundBorderWidth: 15,
-                    backgroundBorderWidth: 15,
-                    percent: 38,
-                    textSize: 28,
-                    textStyle: 'font-size: 12px;',
-                    textColor: '#666',
-                    multiPercentage: 1,
-                    percentages: [10, 20, 30],
-                    text: "Java", 
-                    textBelow: true
-                }); 
-
-                $("#test-circle7").html("");
-                $("#test-circle7").circliful({
-                    animation: 1,
-                    animationStep: 5,
-                    foregroundBorderWidth: 15,
-                    backgroundBorderWidth: 15,
-                    percent: 38,
-                    textSize: 28,
-                    textStyle: 'font-size: 12px;',
-                    textColor: '#666',
-                    multiPercentage: 1,
-                    percentages: [10, 20, 30],
-                    text: "Java", 
-                    textBelow: true
-                }); 
-
-                $("#test-circle8").html("");
-                $("#test-circle8").circliful({
-                    animation: 1,
-                    animationStep: 5,
-                    foregroundBorderWidth: 15,
-                    backgroundBorderWidth: 15,
-                    percent: 38,
-                    textSize: 28,
-                    textStyle: 'font-size: 12px;',
-                    textColor: '#666',
-                    multiPercentage: 1,
-                    percentages: [10, 20, 30],
-                    text: "Java", 
-                    textBelow: true
-                }); 
-            }
-
-        </script>
-        <script>
-var waypoint = new Waypoint({
-  element: document.getElementById('skills'),
-  handler: function(direction) {
-      myFunction()
-  },
-  offset: '25%'
-})
-
-        </script>
-        <script>
-            var isMobile = {
-                Android: function() {
-                    return navigator.userAgent.match(/Android/i);
-                },
-                BlackBerry: function() {
-                    return navigator.userAgent.match(/BlackBerry/i);
-                },
-                iOS: function() {
-                    return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-                },
-                Opera: function() {
-                    return navigator.userAgent.match(/Opera Mini/i);
-                },
-                Windows: function() {
-                    return navigator.userAgent.match(/IEMobile/i);
-                },
-                any: function() {
-                    return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-                }
-            };
-
-            $('#hero-carousel').carousel ({
-                interval: isMobile.any() ? false : 5000
-            });
-
-        </script>
-
-        <script type="text/javascript">
-            $(document).ready(function() {
-                //Horizontal Tab
-                $('#parentHorizontalTab').easyResponsiveTabs({
-                    type: 'default', //Types: default, vertical, accordion
-                    width: 'auto', //auto or any width like 600px
-                    fit: true, // 100% fit in a container
-                    tabidentify: 'hor_1', // The tab groups identifier
-                    activate: function(event) { // Callback function if tab is switched
-                        var $tab = $(this);
-                        var $info = $('#nested-tabInfo');
-                        var $name = $('span', $info);
-                        $name.text($tab.text());
-                        $info.show();
-                    }
-                });
-
-                // Child Tab
-                $('#ChildVerticalTab_1').easyResponsiveTabs({
-                    type: 'vertical',
-                    width: 'auto',
-                    fit: true,
-                    tabidentify: 'ver_1', // The tab groups identifier
-                    activetab_bg: '#fff', // background color for active tabs in this group
-                    inactive_bg: '#F5F5F5', // background color for inactive tabs in this group
-                    active_border_color: '#c1c1c1', // border color for active tabs heads in this group
-                    active_content_border_color: '#5AB1D0' // border color for active tabs contect in this group so that it matches the tab head border
-                });
-
-
-                // Child Tab
-                $('#ChildVerticalTab_2').easyResponsiveTabs({
-                    type: 'vertical',
-                    width: 'auto',
-                    fit: true,
-                    tabidentify: 'ver_1', // The tab groups identifier
-                    activetab_bg: '#fff', // background color for active tabs in this group
-                    inactive_bg: '#F5F5F5', // background color for inactive tabs in this group
-                    active_border_color: '#c1c1c1', // border color for active tabs heads in this group
-                    active_content_border_color: '#5AB1D0' // border color for active tabs contect in this group so that it matches the tab head border
-                });
-
-
-                // Child Tab
-                $('#ChildVerticalTab_3').easyResponsiveTabs({
-                    type: 'vertical',
-                    width: 'auto',
-                    fit: true,
-                    tabidentify: 'ver_1', // The tab groups identifier
-                    activetab_bg: '#fff', // background color for active tabs in this group
-                    inactive_bg: '#F5F5F5', // background color for inactive tabs in this group
-                    active_border_color: '#c1c1c1', // border color for active tabs heads in this group
-                    active_content_border_color: '#5AB1D0' // border color for active tabs contect in this group so that it matches the tab head border
-                });
-
-
-                //Vertical Tab
-                $('#parentVerticalTab').easyResponsiveTabs({
-                    type: 'vertical', //Types: default, vertical, accordion
-                    width: 'auto', //auto or any width like 600px
-                    fit: true, // 100% fit in a container
-                    closed: 'accordion', // Start closed if in accordion view
-                    tabidentify: 'hor_1', // The tab groups identifier
-                    activate: function(event) { // Callback function if tab is switched
-                        var $tab = $(this);
-                        var $info = $('#nested-tabInfo2');
-                        var $name = $('span', $info);
-                        $name.text($tab.text());
-                        $info.show();
-                    }
-                });
-            });
         </script>
     </body>
 </html>
