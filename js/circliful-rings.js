@@ -1,4 +1,4 @@
-function myFunction() {
+function skillRings() {
                 $("#test-circle1").html("");
                 $("#test-circle1").circliful({
                     animation: 1,

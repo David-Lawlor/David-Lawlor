@@ -12,15 +12,12 @@
         <link href="css/carousel.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css"/>
         <link rel="stylesheet" type="text/css" href="css/jquery.circliful.css" />
+        <link rel="stylesheet" type="text/css" href="css/animate.css" />
         <link href="css/style.css" rel="stylesheet" />
-        <style>
-            
-
-        </style>
 
     </head>
-    <body>
-        <div class="navbar navbar-inverse navbar-fixed-top">
+    <body >
+        <div class="navbar navbar-inverse navbar-fixed-top" >
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -28,7 +25,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#" id="logo"><img class="img-responsive" style="max-width:140px; margin-top: -7px;" src="img/banner.png" href="#"></a>
+                    <a class="navbar-brand" href="#" id="logo"><img class="img-responsive" style="max-width:140px; margin-top: -7px;" src="" href="#"></a>
                 </div>
 
 
@@ -46,27 +43,39 @@
                     </ul>
 
 
-                    <ul class="nav navbar-nav navbar-right">
+                    <ul class="nav navbar-nav navbar-right" id="navbar">
                         <li class="navigation-spacing">
-                            <a href="#">Home
+                            <a href="#top-of-page" class="home" >Home
                                 <span class="glyphicon-nav pull-left hidden-xs showopacity glyphicon glyphicon-home"></span>
                             </a>
                         </li>
                         <li class="navigation-spacing">
-                            <a href="#about">About
+                            <a data-scroll href="#about" class="about">About
                                 <span class="glyphicon-nav pull-left hidden-xs showopacity glyphicon glyphicon-user"></span>
                             </a>
                         </li>
 
                         <li class="navigation-spacing">
-                            <a href="#education">Education
+                            <a data-scroll href="#education" class="education">Education
                                 <span class="glyphicon-nav pull-left hidden-xs showopacity glyphicon glyphicon-education"></span>
                             </a>
                         </li>
 
                         <li class="navigation-spacing">
-                            <a href="">Experience
+                            <a data-scroll href="#skills" class="skills">Skills
+                                <span class="glyphicon-nav pull-left hidden-xs showopacity glyphicon glyphicon-pencil"></span>
+                            </a>
+                        </li>
+
+                        <li class="navigation-spacing">
+                            <a data-scroll href="#work-exp" class="work-exp">Work Experience
                                 <span class="glyphicon-nav pull-left hidden-xs showopacity glyphicon glyphicon-book"></span>
+                            </a>
+                        </li>
+
+                        <li class="navigation-spacing">
+                            <a data-scroll href="#projects" class="projects">Projects
+                                <span class="glyphicon-nav pull-left hidden-xs showopacity glyphicon glyphicon glyphicon-briefcase"></span>
                             </a>
                         </li>
 
@@ -81,7 +90,7 @@
         </div>
 
 
-        <div class="fullscreen background parallax" style="background-image:url('img/banner-full.jpg');" data-img-width="1600" data-img-height="1064" data-diff="100">
+        <div class="fullscreen background parallax" style="background-image:url('img/banner-full.jpg');" data-img-width="1600" data-img-height="1064" data-diff="100" id="top-of-page">
             <div class="content-a">
                 <div class="content-b">
                     <img class="img-responsive center-block img-circle" src="/img/bm.jpg"> 
@@ -97,12 +106,12 @@
         </div>
 
         <!-- -->
-        <section class="infodiv" id="about">
+        <section class="infodiv" id="about" class="about">
             <div class="content-a">
                 <div class="content-b">
                     <div class="container">
                         <div class="infopanel">
-                            <h2>ABOUT</h2>
+                            <h2 id="about-heading" class="animated">ABOUT</h2>
                             <hr />
                             <p>Currently in my 4th year of study in Computer Science at IT Tallaght which I will be due to complete in May 2017. 
                             </p>
@@ -160,8 +169,8 @@
             </div>
         </div>
 
-        <section class="infodiv">
-            <h2>Education</h2>
+        <section class="infodiv" id="education" class="education">
+            <h2 id="education-heading" class="animated">Education</h2>
             <div ng-app="collegeSubjects" ng-controller="subjectCtrl">
                 <div class="container">
                     <div id="parentHorizontalTab">
@@ -368,12 +377,12 @@
         </div>
 
 
-        <section class="infodiv">
+        <section class="infodiv" id="skills" class="skills">
             <div class="content-a">
                 <div class="content-b">
                     <div class="container">
-                        <div class="infopanel" id="skills">
-                            <h2>Skills</h2>
+                        <div class="infopanel">
+                            <h2 id="skills-heading" class="animated">Skills</h2>
                             <div class="row">
                                 <div class="col-xs-6 col-sm-3 col-md-3"><div id="test-circle1"></div></div>
                                 <div class="col-xs-6 col-sm-3 col-md-3"><div id="test-circle2"></div></div>
@@ -400,8 +409,8 @@
             </div>
         </div>
 
-        <section class="infodiv">
-            <h2>Experience</h2>
+        <section class="infodiv" id="work-exp" class="work-exp">
+            <h2 id="work-exp-heading" class="animated">Experience</h2>
             <div class="content-a">
                 <div class="content-b">
                     <div class="container"> 
@@ -478,9 +487,10 @@
 
 
         <!-- -->
-        <section class="infodiv">
+        <section class="infodiv" id="projects" class="projects">
             <div class="content-a">
                 <div class="content-b">
+                    <h2 id="projects-heading" class="animated">Projects</h2>
                     <div class="container hero">
                         <!-- Carousel -->
                         <div id="hero-carousel" class="carousel slide" data-ride="carousel">
@@ -781,6 +791,8 @@
         <script src="js/circliful-rings.js"></script>
         <script src="js/carousel-disable-mobile.js"></script>
         <script src="js/responsive-tabs-custom.js"></script>
+        <script src="js/smooth-scroll.js"></script>
+        <script src="js/heading-animations.js"></script>
         <script type="text/javascript">
             // When the DOM is ready, run this function
             $(document).ready(function() {
@@ -797,14 +809,17 @@
                 });
 
                 // populate the skill rings
-                myFunction()
+                skillRings()
+                
+                headingAnimation()
 
+                smoothScroll.init();
 
                 // animate the skill rings when scroll to them
                 var waypoint = new Waypoint({
                     element: document.getElementById('skills'),
                     handler: function(direction) {
-                        myFunction()
+                        skillRings()
                     },
                     offset: '25%'
                 })

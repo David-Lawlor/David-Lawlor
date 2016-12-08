@@ -37,18 +37,17 @@
     padding-right: 60px;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 1268px) {
+    .navigation-spacing {
+        padding-right: 30px;
+    }
+}
+
+@media only screen and (max-width: 1025px) {
     .navigation-spacing {
         padding-right: 0px;
     }
 }
-
-@media (max-width: 992px) {
-    .navigation-spacing {
-        padding-right: 10px;
-    }
-}
-
 
 .jumbotron-custom {
     max-width: 250px;
@@ -472,8 +471,31 @@
     margin-top: -40px;
 }
 
+#education {
+    padding-top: 100px;
+    margin-top: -40px;
+}
+
+#skills {
+    padding-top: 100px;
+    margin-top: -40px;
+}
+
+#work-exp {
+    padding-top: 100px;
+    margin-top: -40px;
+}
+
+#projects {
+    padding-top: 100px;
+    margin-top: -40px;
+}
 
 
+.message {
+    padding-top: 100px;
+    margin-top: -40px;
+}
 
 
 
