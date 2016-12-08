@@ -15,8 +15,19 @@
         <link rel="stylesheet" type="text/css" href="css/animate.css" />
         <link href="css/style.css" rel="stylesheet" />
 
+        <style>
+            .work-exp-modal-text {
+                text-align: left;
+            }
+
+            .modal.and.carousel {
+                position: absolute; 
+            }
+
+        </style>
+
     </head>
-    <body >
+    <body data-spy="scroll" data-target=".navbar" data-offset="300">
         <div class="navbar navbar-inverse navbar-fixed-top" >
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -34,7 +45,7 @@
                         <li>
                             <form action="http://www.google.com/search" method="get" class="search-form">
                                 <div class="form-group has-feedback" style="margin: 10px 10px 0 0;">
-                                    <label for="search" class="sr-only">Search</label>
+                                    <label for="search" class="sr-only"><gcse:search></gcse:search></label>
                                     <input type="btn btn-submit" class="form-control" name="search" id="search" placeholder="search">
                                     <span class="glyphicon glyphicon-search form-control-feedback"></span>
                                 </div>
@@ -93,11 +104,11 @@
         <div class="fullscreen background parallax" style="background-image:url('img/banner-full.jpg');" data-img-width="1600" data-img-height="1064" data-diff="100" id="top-of-page">
             <div class="content-a">
                 <div class="content-b">
-                    <img class="img-responsive center-block img-circle" src="/img/bm.jpg"> 
+                    <img class="img-responsive center-block img-circle" src="/img/avatar.jpg" alt="Avatar"> 
                     <div class="text-center jumbotron-custom center-block">
-                        <h3>David Lawlor</h3>
+                        <h1>David Lawlor</h1>
                         <h4>Software Developer</h4> 
-                        <a class="btn btn-primary btn-lg pulse-button" href="/img/banner-1.jpg">
+                        <a class="btn btn-primary btn-lg pulse-button" href="/docs/David%20Lawlor%20CV.docx">
                             <i class="fa fa-paperclip cv-button" aria-hidden="true"></i>Download CV
                         </a>
                     </div>
@@ -184,10 +195,10 @@
                                 <h4>Duration: September 2013 - Present</h4>
                                 <div id="ChildVerticalTab_1">
                                     <ul class="resp-tabs-list ver_1">
-                                        <li><img src="img/IT-Tallaght-Logo.gif" /><h4>Year 4</h4></li>
-                                        <li><img src="img/IT-Tallaght-Logo.gif" /><h4>Year 3</h4></li>
-                                        <li><img src="img/IT-Tallaght-Logo.gif" /><h4>Year 2</h4></li>
-                                        <li><img src="img/IT-Tallaght-Logo.gif" /><h4>Year 1</h4></li>
+                                        <li><img src="img/IT-Tallaght-Logo.gif" alt="it-tallaght-logo" /><h4>Year 4</h4></li>
+                                        <li><img src="img/IT-Tallaght-Logo.gif" alt="it-tallaght-logo" /><h4>Year 3</h4></li>
+                                        <li><img src="img/IT-Tallaght-Logo.gif"  alt="it-tallaght-logo" /><h4>Year 2</h4></li>
+                                        <li><img src="img/IT-Tallaght-Logo.gif" alt="it-tallaght-logo" /><h4>Year 1</h4></li>
                                     </ul>
                                     <div class="resp-tabs-container ver_1">
                                         <div>
@@ -274,7 +285,7 @@
                                 <h4>Duration: March 2013 - July 2013</h4>
                                 <div id="ChildVerticalTab_2">
                                     <ul class="resp-tabs-list ver_1">
-                                        <li><img src="img/IT-Tallaght-Logo.gif" />
+                                        <li><img src="img/IT-Tallaght-Logo.gif" alt="it-tallaght-logo" />
                                             <h4>Year 1</h4>
                                         </li>
                                     </ul>
@@ -305,9 +316,9 @@
                                 <h4>Duration: May 2007 - January 2013</h4>
                                 <div id="ChildVerticalTab_3">
                                     <ul class="resp-tabs-list ver_1">
-                                        <li><img src="img/wit_logo.png" /><h4>Year 3</h4></li>
-                                        <li><img src="img/wit_logo.png" /><h4>Year 2</h4></li>
-                                        <li><img src="img/fas_logo.png" /><h4>Year 1</h4></li>
+                                        <li><img src="img/wit_logo.png" alt="wit-logo" /><h4>Year 3</h4></li>
+                                        <li><img src="img/wit_logo.png" alt="wit-logo" / ><h4>Year 2</h4></li>
+                                        <li><img src="img/fas_logo.png" alt="fas-logo" /><h4>Year 1</h4></li>
                                     </ul>
                                     <div class="resp-tabs-container ver_1">
                                         <div>
@@ -417,7 +428,7 @@
 
                         <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 hover-pic-div">
                             <div class="hovereffect">
-                                <img src="/img/openjaw_logo.jpg" alt="">
+                                <img src="/img/openjaw_logo.jpg" alt="openjaw-logo">
                                 <div class="overlay">
                                     <h2>OpenJaw Technologies</h2>
                                     <a href="#openjaw-modal" data-toggle="modal" class="info">See More</a>
@@ -431,7 +442,7 @@
 
                         <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 hover-pic-div">
                             <div class="hovereffect ">
-                                <img src="/img/wriggle_logo.jpg" alt="">
+                                <img src="/img/wriggle_logo.jpg" alt="wriggle-logo">
                                 <div class="overlay">
                                     <h2>Wriggle</h2>
                                     <a href="#wriggle-modal" data-toggle="modal" class="info">See More</a>
@@ -445,7 +456,7 @@
 
                         <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 hover-pic-div">
                             <div class="hovereffect">
-                                <img  src="/img/tripwire_logo.png" alt="">
+                                <img  src="/img/tripwire_logo.png" alt="tripwire-logo">
                                 <div class="overlay">
                                     <h2>Tripwire</h2>
                                     <a href="#tripwire-modal" data-toggle="modal" class="info">See More</a>
@@ -459,7 +470,7 @@
 
                         <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 hover-pic-div">
                             <div class="hovereffect">
-                                <img src="/img/sls_logo.png" alt="">
+                                <img src="/img/sls_logo.png" alt="sls-group-logo">
                                 <div class="overlay">
                                     <h2>SLS Group</h2>
                                     <a href="#sls-modal" data-toggle="modal" class="info">See More</a>
@@ -497,40 +508,46 @@
                             <!-- Indicators -->
                             <ol class="carousel-indicators row">
                                 <li data-target="#hero-carousel" data-slide-to="0" class="col-sm-4 message active">
-                                    <div class="caption">CAPTION 1</div>
+                                    <div class="caption">Year 4 Project</div>
                                 </li>
                                 <li data-target="#hero-carousel" data-slide-to="1" class="col-sm-4 message">
-                                    <div class="caption">CAPTION 2</div>
+                                    <div class="caption">Year 3 Project</div>
                                 </li>
                                 <li data-target="#hero-carousel" data-slide-to="2" class="col-sm-4 message">
-                                    <div class="caption">CAPTION 3</div>
+                                    <div class="caption">Year 2 Project</div>
                                 </li>
                             </ol>
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner">
+                                <div class="item">
+                                    <div class="carousel-card" style="">
+                                        <img src="img/project4/coming_soon.png" alt="coming soon banner" style="width: 95%; height: 80%;" />
+                                    </div>
+                                    <div class="carousel-caption">
+                                        <h1 class="message-3"></h1>
+<!--                                        <p><a href="" class="btn btn-lg message" >See More</a></p>-->
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="carousel-card" style="">
+                                        <img src="img/year_3_project.jpg" alt="year3-project-logo" style="width: 95%; height: 80%;" />
+                                    </div>
+                                    <div class="carousel-caption">
+                                        <h1 class="message-2"></h1>
+<!--                                        <p><a href="#year3-project-modal" data-toggle="modal" class="btn btn-lg message info">See More</a></p>-->
+                                    </div>
+                                </div>
                                 <div class="item active">
-                                    <div class="carousel-card" style=""></div>
-                                    <div class="carousel-caption">
-                                        <h1 class="message-1">Title 1</h1>
-                                        <p><a href="" class="btn btn-lg message">Link to title 1</a></p>
-                                    </div>
-                                </div>
-                                <div class="item">
                                     <div class="carousel-card" style="">
+                                        <img src="img/project2/unspecified" alt="year2-project-logo" style="width: 95%; height: 80%;" />
                                     </div>
                                     <div class="carousel-caption">
-                                        <h1 class="message-2">Title 2!</h1>
-                                        <p><a href="" class="btn btn-lg message">Link to title 2</a></p>
+                                        <h1 class="message-1"></h1>
+                                        <p><button class="btn btn-lg message" data-toggle="modal" data-target="#bs-example-modal-lg">See More</button></p>
                                     </div>
                                 </div>
-                                <div class="item">
-                                    <div class="carousel-card" style="">
-                                    </div>
-                                    <div class="carousel-caption">
-                                        <h1 class="message-3">Title 3?</h1>
-                                        <p><a href="" class="btn btn-lg message">Link to title 1</a></p>
-                                    </div>
-                                </div>
+
                             </div>
                             <!-- Left and right controls -->
                             <a class="left carousel-control" href="#hero-carousel" role="button" data-slide="prev">
@@ -569,14 +586,14 @@
                                         <li> <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
                                     </ul>
                                 </div>
-                                <form class="form-horizontal" style="max-height: 400px" role="form">
+                                <form  id="footer-contact" class="form-horizontal" style="max-height: 400px" role="form">
                                     <h3 class="bottom-contact-form-heading">Contact Me</h3>
                                     <fieldset>
                                         <!-- Text input-->
                                         <div class="form-group">
                                             <label class="col-sm-1 control-label bottom-contact-form">Name</label>
                                             <div class="col-sm-12">
-                                                <input type="text" class="form-control" name="first_name" id="first_name"  required>
+                                                <input type="text" class="form-control" name="first_name" id="first_name">
                                             </div>
                                         </div>
 
@@ -584,7 +601,7 @@
                                         <div class="form-group">
                                             <label class="col-sm-1 control-label bottom-contact-form" >Email</label>
                                             <div class="col-sm-12">
-                                                <input type="email" class="form-control" id="email" name="email"  required  >
+                                                <input type="email" class="form-control" id="email" name="email">
                                             </div>
                                         </div>
 
@@ -592,14 +609,14 @@
                                         <div class="form-group">
                                             <label class="col-sm-1 control-label bottom-contact-form" >Message</label>
                                             <div class="col-sm-12">
-                                                <textarea name="comments" id="comments" class="form-control" rows="5" required></textarea>
+                                                <textarea name="comments" id="comments" class="form-control" rows="5"></textarea>
                                             </div>
                                         </div>
 
                                         <div class="form-group">
                                             <div class="col-sm-offset-2 col-sm-10">
                                                 <div class="pull-right">
-                                                    <button type="submit" class="btn btn-primary" style="position: relative; top: -50px" >Send<i class="fa fa-paper-plane" aria-hidden="true" style="padding-left: 5px;"></i></button>
+                                                    <button id="send-message1" onclick="popup()" class="btn btn-primary" style="position: relative; top: -50px">Send<i class="fa fa-paper-plane" aria-hidden="true" style="padding-left: 5px;"></i></button>
                                                 </div>
                                             </div>
                                         </div>
@@ -629,7 +646,7 @@
                     </div>
                     <div class="modal-body" style="margin: 10px;">
                         <div class="row">
-                            <form class="form-horizontal" role="form">
+                            <form id="modal-contact-form" class="form-horizontal" role="form">
                                 <fieldset>
                                     <!-- Text input-->
                                     <div class="form-group">
@@ -686,7 +703,7 @@
                                     <li> <a href="https://www.facebook.com/"  target="_blank"><i class="fa fa-facebook"></i></a> </li>
                                     <li> <a href="https://ie.linkedin.com/in/davidlawlor1" target="_blank"><i class="fa fa-linkedin"></i></a> </li>
                                     <li> <a href="http://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow"></i></a> </li>
-                                    <li> <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                    <li> <a href="https://github.com/David-Lawlor/David-Lawlor.github.io" target="_blank"><i class="fa fa-twitter"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -699,14 +716,33 @@
         <div class="project-modal modal fade container" id="openjaw-modal" tabindex="-1" role="dialog" >
             <div class="modal-content">
                 <div class="modal-header">
-                    <span class="fa-stack fa-lg close-button pull-right" data-dismiss="modal">
+                    <a class="fa-stack fa-lg close-button pull-right" style="background-color: white; border-radius: 100%" data-dismiss="modal">
                         <i class="fa fa-circle fa-stack-2x"></i>
                         <i class="fa fa-times fa-stack-1x fa-inverse"></i>
-                    </span>
+                    </a>
                     <h2>Openjaw</h2>
                 </div>
                 <div class="modal-body">
-
+                    <a href="http://www.openjawtech.com/" target="_blank"><img src="img/openjaw_logo.jpg" alt="openjaw-logo"></a>
+                    <h2>Jobtitle: Intern Software Developer</h2>
+                    <h3>Duration: January 2016 - September 2016</h3>
+                    <h3 class="work-exp-modal-text">Duties and Responsibilites</h3>
+                    <p class="work-exp-modal-text">During my work experience with OpenJaw I was tasked with many responsibilities</p>
+                    <p class="work-exp-modal-text">Tasks: </p>
+                    <ul class="work-exp-modal-text">
+                        <li>Customisation of configuration file automation(Project)</li>
+                        <li>Multi-node Cassandra cluster setup</li>
+                        <li>Migration of data between multiple Cassandra Keyspaces</li>
+                        <li>Automation of deployment of application architecture using Ansible</li>
+                    </ul>
+                    <p class="work-exp-modal-text">Technologies used:</p>
+                    <ul class="work-exp-modal-text">
+                        <li>Groovy</li>
+                        <li>XML</li>
+                        <li>Apache Ivy</li>
+                        <li>Apache Ant</li>
+                        <li>Ansible</li>
+                    </ul>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
@@ -718,14 +754,34 @@
         <div class="project-modal modal fade container" id="wriggle-modal" tabindex="-1" role="dialog" >
             <div class="modal-content">
                 <div class="modal-header">
-                    <span class="fa-stack fa-lg close-button pull-right" data-dismiss="modal">
+                    <a class="fa-stack fa-lg close-button pull-right" style="background-color: white; border-radius: 100%" data-dismiss="modal">
                         <i class="fa fa-circle fa-stack-2x"></i>
                         <i class="fa fa-times fa-stack-1x fa-inverse"></i>
-                    </span>
+                    </a>
                     <h2>Wriggle</h2>
                 </div>
                 <div class="modal-body">
-
+                    <a href="http://www.wriggle.ie/" target="_blank"><img src="img/wriggle_logo.jpg" alt="wriggle-logo"></a>
+                    <h2>Jobtitle: E-Learning Device Configuration</h2>
+                    <h3>Duration: May 2015 - September 2016</h3>
+                    <h3 class="work-exp-modal-text">Duties and Responsibilites</h3>
+                    <p class="work-exp-modal-text">
+                        Wriggle is a new brand brought to you by Irish-owned company Typetec, established in 1982.
+                    </p>
+                    <p class="work-exp-modal-text">
+                        Typetec employs over 40 people at its Dublin headquarters, with additional staff based throughout the country.<br>
+                        Typetec has over 20 years experience as a trusted technology partner in the education sector, working with primary schools, secondary schools and third level institutions all over Ireland.
+                    </p>
+                    <p class="work-exp-modal-text">
+                        My job in Wriggle was just some of the following:
+                    </p>
+                    <ul class="work-exp-modal-text">
+                        <li>Device configuration</li>
+                        <li>Correct and safe packaging of devices</li>
+                        <li>Logistics of diliveries</li>
+                        <li>Stock control</li>
+                        <li>Keeping to strict deadlines</li>
+                    </ul>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
@@ -737,14 +793,29 @@
         <div class="project-modal modal fade container" id="tripwire-modal" tabindex="-1" role="dialog" >
             <div class="modal-content">
                 <div class="modal-header">
-                    <a class="fa-stack fa-lg pull-right" style="background-color: white; border-radius: 100%" data-dismiss="modal">
-                        <i class="fa fa-times fa-stack-1x" style="color: black"></i>
+                    <a class="fa-stack fa-lg pull-right close-button" style="background-color: white; border-radius: 100%" data-dismiss="modal">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-times fa-stack-1x fa-inverse"></i>
                     </a>
                     <h2>Tripwire</h2>
                 </div>
                 <div class="modal-body">
-
+                    <a href="http://tripwire.ie/" target="_blank"><img src="img/tripwire_logo.png" alt="tripwire-logo"></a>
+                    <h2>Jobtitle: Apprentice in Electronic Security Systems</h2>
+                    <h3>Duration: April 2011 - January 2013</h3>
+                    <h3 class="work-exp-modal-text">Duties and Responsibilites</h3>
+                    <p class="work-exp-modal-text"> While at AAT Technologies I progressed my skills that I had learned with SLS Group. I learned to coordinate my workload as I worked autonomously on various projects for the HSE and Coillte. I also built on my interpersonal skills as I liaised with customers about the work to be carried out and its progression throughout the job.
+                    </p>
+                    <p class="work-exp-modal-text">Work undertaken included:</p>
+                    <ul class="work-exp-modal-text">
+                        <li>Installation, upgrading and maintaining Intruder alarm systems</li>
+                        <li>Installation and maintenance of automatic gates and barriers</li>
+                        <li>Installation and maintaining fire alarm systems</li>
+                        <li>Installation and maintenance of access control systems</li>
+                        <li>Installation of intercoms systems</li>
+                    </ul>
                 </div>
+
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                 </div>
@@ -755,14 +826,26 @@
         <div class="project-modal modal fade container" id="sls-modal" tabindex="-1" role="dialog" >
             <div class="modal-content">
                 <div class="modal-header">
-                    <span class="fa-stack fa-lg close-button pull-right" data-dismiss="modal">
+                    <a class="fa-stack fa-lg close-button pull-right" style="background-color: white; border-radius: 100%" data-dismiss="modal">
                         <i class="fa fa-circle fa-stack-2x"></i>
                         <i class="fa fa-times fa-stack-1x fa-inverse"></i>
-                    </span>
+                    </a>
                     <h2>SLS Group</h2>
                 </div>
                 <div class="modal-body">
-
+                    <a href=""><img src="img/sls_logo.png" alt="sls-group-logo"></a>
+                    <h2>Jobtitle: Apprentice in Electronic Security Systems</h2>
+                    <h3>Duration: May 2007 - August 2010</h3>
+                    <h3 class="work-exp-modal-text">Duties and Responsibilites</h3>
+                    <p class="work-exp-modal-text"> Installation of new security systems and maintenance of existing systems.</p>
+                    <p class="work-exp-modal-text">Work undertaken included:</p>
+                    <ul class="work-exp-modal-text">
+                        <li>Installation, upgrading and maintaining Intruder alarm systems</li>
+                        <li>Installation and maintenance of automatic gates and barriers</li>
+                        <li>Installation and maintaining fire alarm systems</li>
+                        <li>Installation and maintenance of access control systems</li>
+                        <li>Installation of intercoms systems</li>
+                    </ul>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
@@ -771,10 +854,65 @@
         </div>
 
 
+
+
+
+        <div class="container text-center">
+            <div class="modal fade" id="bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img class="img-responsive" src="/img/project2/admin_screen.png" alt="First slide">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img class="img-responsive" src="/img/project2/log.png" alt="Second slide">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img class="img-responsive" src="/img/project2/terminal_window" alt="Third slide">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img class="img-responsive" src="/img/project2/unspecified" alt="fourth slide">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                        <div>                        
+                            <p style="padding: 10px" >
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
         <div id="popup">
             <h2>Thank you!</h2>
             <p>Your message has been successfully sent. We will contact you very soon!</p>
         </div>
+
 
         <!-- include jQuery -->
         <script src="js/jquery-1.10.2.min.js"></script>
@@ -806,11 +944,14 @@
                     $('#popup').bPopup({
                         autoClose: 3000 //Auto closes after 1000ms/1sec
                     });
+                    var form = document.getElementById("modal-contact-form");
+                    form.reset();
                 });
+
 
                 // populate the skill rings
                 skillRings()
-                
+
                 headingAnimation()
 
                 smoothScroll.init();
@@ -830,5 +971,17 @@
             $("#zoom_02").elevateZoom();
 
         </script>
+
+        <script>                
+            function popup()
+            {
+                $('#popup').bPopup({
+                    autoClose: 3000 //Auto closes after 1000ms/1sec
+                });
+                var form = document.getElementById("footer-contact");
+                form.reset();
+            }
+        </script>
+
     </body>
 </html>

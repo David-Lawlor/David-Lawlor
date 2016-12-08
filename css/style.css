@@ -58,7 +58,7 @@
     border-width: medium;
 }
 
-.jumbotron-custom > h3,
+.jumbotron-custom > h1,
 .jumbotron-custom > h4 {
     color: #cccccc;
 }
